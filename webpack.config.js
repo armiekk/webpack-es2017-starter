@@ -5,12 +5,13 @@ module.exports = function () {
     return {
         context: path.resolve(__dirname, 'app'),
         entry: {
-            main: './index.js' 
+            main: './index.js'
         },
         output: {
             filename: '[name].js',
             path: path.resolve(__dirname, 'dist')
         },
+        target: 'node',
         module: {
             rules: [
                 {

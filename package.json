@@ -13,6 +13,8 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.5.2",
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0",
     "webpack": "^2.6.1"
   }
 }
