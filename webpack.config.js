@@ -27,8 +27,14 @@ module.exports = function () {
                             ]
                         },
                     }
+                },
+                {
+                    test: /\.tsx?$/,
+                    use: 'ts-loader',
+                    exclude: /node_modules/,
                 }
-            ]
-        }
+            ],
+        },
+        resolve: ['.tsx', '.ts', '.js'],
     }
 }
