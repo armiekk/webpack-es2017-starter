@@ -13,8 +13,7 @@ module.exports = function () {
         },
         target: 'node',
         module: {
-            rules: [
-                {
+            rules: [{
                     test: /\.js$/,
                     exclude: /(node_modules|bower_components)/,
                     use: {
@@ -35,6 +34,8 @@ module.exports = function () {
                 }
             ],
         },
-        resolve: ['.tsx', '.ts', '.js'],
+        resolve: {
+            extensions: ['.tsx', '.ts', '.js'],
+        },
     }
 }

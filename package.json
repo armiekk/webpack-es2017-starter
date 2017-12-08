@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "concurrently \"yarn build\" \"nodemon ./dist/main.js\""
   },
   "name": "webpack-es2017-starter",
   "version": "1.0.0",
@@ -18,5 +19,9 @@
     "ts-loader": "^2.3.7",
     "typescript": "^2.5.2",
     "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-session": "^1.15.6"
   }
 }
